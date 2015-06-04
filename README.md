@@ -1,6 +1,9 @@
-## Docker best practices
+# Dockerfile tips
 
 ## Dockerfile Best Practices
+
+This goes over the best pratices in the
+[Docker Documentation](http://docs.docker.com/articles/dockerfile_best-practices/).
 
 From [DockerCon EU 2014 video](https://www.youtube.com/watch?v=xNfCEie5_RA)
 and [Slides]http://www.slideshare.net/rafecolton/dockercon-eu-2014().
