@@ -29,11 +29,11 @@ and [Slides](http://www.slideshare.net/rafecolton/dockercon-eu-2014).
  * Always use a standard entry point. Example:
 
  ```dockerfile
-    ADD .docker/docker-entrypoint /docker-entrypoint
+ADD .docker/docker-entrypoint /docker-entrypoint
 
-    VOLUME ["/app/style-galerry/public"]
-    ENTRYPOINT ["/opcker-entrypoint"]
-    CMD ["style-gallery"]
+VOLUME ["/app/style-galerry/public"]
+ENTRYPOINT ["/opcker-entrypoint"]
+CMD ["style-gallery"]
 ```
 
    the code that runs could be something like:
