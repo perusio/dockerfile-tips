@@ -6,7 +6,7 @@ This goes over the best pratices in the
 [Docker Documentation](http://docs.docker.com/articles/dockerfile_best-practices/).
 
 From [DockerCon EU 2014 video](https://www.youtube.com/watch?v=xNfCEie5_RA)
-and [Slides]http://www.slideshare.net/rafecolton/dockercon-eu-2014().
+and [Slides](http://www.slideshare.net/rafecolton/dockercon-eu-2014).
 
  * Always read the Dockerfile from a base you're suing if you didn't
    built it yourself.
