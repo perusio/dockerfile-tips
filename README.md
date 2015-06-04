@@ -33,7 +33,8 @@ and [Slides]http://www.slideshare.net/rafecolton/dockercon-eu-2014().
     CMD ["style-gallery"]
 
    the code that runs could be something like:
-   
+
+```bash
     run_entrypoint() {
         cd /path/to/app
         ## Operate on Docker specific environment variables.
@@ -46,5 +47,22 @@ and [Slides]http://www.slideshare.net/rafecolton/dockercon-eu-2014().
     }
 
    run_entrypoint "$@"
+```
 
- 
+  Another example from the official Postgres image:
+
+```bash
+    #!/bin/bash
+    set -e
+
+    if [ "$1" = 'postgres' ]; then
+       chown -R postgres "$PGDATA"
+
+       if [ -z "$(ls -A "$PGDATA")" ]; then
+          gosu postgres initdb
+       fi
+       exec gosu postgres "$@"
+   fi
+
+   exec "$@"
+```
